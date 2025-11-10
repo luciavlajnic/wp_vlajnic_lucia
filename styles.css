@@ -6,3 +6,14 @@ h2 {
 body {
     background-color: gray;
 }
+ /*pristup preko id-a*/
+
+#prvi {
+    color: blue;
+}
+
+/*pristup preko klase*/
+.drugi{
+color: brown;
+}
+

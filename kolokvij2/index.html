@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kolokvij 2</title>
+    <style>
+        .zastava {
+            width: 300px;
+            height: 200px;
+            display: flex;
+        }
+        .crna {
+            background-color: black;
+            flex: 1;
+        }
+        .zuta {
+            background-color: yellow;
+            flex: 1;
+        }
+        .crvena {
+            background-color: red;
+            flex: 1;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 100px);
+        }
+        .grid div {
+            border: 1px solid black;
+        }
+        .kutija {
+            border: 1px solid black;
+            padding: 15px;
+            margin: 10px;
+        }
+        .Klasa {
+            color: blue;
+            margin: 10px;
+            padding: 10px;
+        }
+        #Id1 {
+            color: red;
+        }
+        #Id2 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="zastava">
+        <div class="crna"></div>
+        <div class="zuta"></div>
+        <div class="crvena"></div>
+    </div>
+
+    <div class="grid">
+        <div>moje</div><div>ime</div><div>je</div><div>Lucia</div>
+        <div>volim</div><div>piti</div><div>kavu</div><div>i</div>
+        <div>jesti</div><div>kolače</div><div>uz</div><div>moju</div>
+        <div>najbolju</div><div>obitelj</div><div>i</div><div>prijatelje</div>
+    </div>
+
+    <div class="kutija">Kutija 1</div>
+    <div class="kutija">Kutija 2</div>
+    <div class="kutija">Kutija 3</div>
+    <div class="kutija">Kutija 4</div>
+
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

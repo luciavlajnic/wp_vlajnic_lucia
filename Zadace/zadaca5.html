@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Recepti - 5. zadaća">
+    <meta name="author" content="Student">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recepti</title>
+
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #ffcc99;
+            padding: 20px;
+            margin: 0;
+        }
+
+        
+        .recept {
+            background-color: white;
+            border: 1px solid #cccccc;
+            margin: 20px;
+            padding: 15px;
+        }
+
+        .recept img {
+            width: 100%;
+            max-width: 300px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .kategorija {
+            color: #777777;
+            font-size: 14px;
+        }
+
+        
+        #grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 20px;
+        }
+
+        .grid-item {
+            background-color: #d9edf7;
+            padding: 20px;
+            border: 1px solid #999999;
+            text-align: center;
+        }
+
+        
+        @media (max-width: 480px) {
+            #grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Moji omiljeni recepti</h1>
+
+    <div class="recept">
+        <h2>Palačinke</h2>
+        <p class="kategorija">Kategorija: Desert</p>
+        <img src="https://www.pcelarstvo-krizmanic.hr/images/blog/palacinke/palacinke-recept-1000w.jpg" alt="Palačinke">
+        <p>
+            Palačinke su jednostavno i brzo jelo. Potrebni su jaja, mlijeko,
+            brašno i malo ulja.
+        </p>
+    </div>
+
+    <div class="recept">
+        <h2>Pizza</h2>
+        <p class="kategorija">Kategorija: Glavno jelo</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrgh6Xx8CBnZM8NPOmIEOwqV_KK6PnE1pluA&s" alt="Pizza">
+        <p>
+            Pizza se sastoji od tijesta, umaka od rajčice, sira i raznih dodataka
+            po želji.
+        </p>
+    </div>
+
+    <div class="recept">
+        <h2>Salata</h2>
+        <p class="kategorija">Kategorija: Predjelo</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJZJ9_N1cmU5hm4jeokLMBv6Mlv3I2wtjDwQ&s" alt="Salata">
+        <p>
+            Salata je zdravo jelo koje se sastoji od svježeg povrća i laganog
+            dresinga.
+        </p>
+    </div>
+
+    
+    <div id="grid">
+        <div class="grid-item">Deserti</div>
+        <div class="grid-item">Glavna jela</div>
+        <div class="grid-item">Predjela</div>
+        <div class="grid-item">Vegetarijansko</div>
+        <div class="grid-item">Brzi recepti</div>
+        <div class="grid-item">Zdrava hrana</div>
+    </div>
+
+</body>
+</html>
